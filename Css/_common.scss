@@ -1,0 +1,56 @@
+.bg-spacegray {
+    background: #d8d7d7;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-orange {
+    background: $orange;
+}
+
+.progress {
+    height: 3px;
+}
+
+.bg-brown {
+    background: #706360;
+}
+
+.bg-white {
+    background: white;
+}
+
+.btn-brown {
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    font-size: 14px;
+    height: 29px;
+    margin: 0 auto;
+    &:focus {
+        outline: none;
+    }
+}
+
+.mg-bottom {
+    margin-bottom: 20px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.width {
+    width: 90px;
+}
+.height{
+    height: 343px;
+}
+.cr-List {
+    padding-top: 15px;
+}
+.borderBottom{
+    border-bottom: 1px solid #4f4f4f;
+}

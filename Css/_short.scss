@@ -1,0 +1,53 @@
+
+#errorPage{
+    position: relative;
+    padding: 100px 0;
+    background: #e8e8e8;
+    height: 600px;
+    color: #786e6c;
+    h3, h6{
+        position: absolute;
+        font-weight: 600;   
+        color: #473936; 
+        font-family: 'Titillium Web', sans-serif;  
+        text-align: center;
+    }
+    h3{
+        bottom: 45%;
+        left: 30%;
+    }
+    h6{
+        bottom: 35%;
+        left: 34%;
+
+    }
+    img.error{
+        position: absolute;
+        left: 36%;
+        width: 350px;
+        height: 170px;
+    }
+    .btn-home{
+        background: $orange;
+        width: 156px;
+        height: 58px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 20%;
+        left: 44%;
+        cursor: pointer;
+        transition: all ease 2s;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+        a{
+            text-decoration: none;
+            color: #e8e8e8;
+        }
+    }
+   
+   
+}

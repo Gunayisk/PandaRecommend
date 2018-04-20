@@ -1,0 +1,610 @@
+#home {
+    .wrapper {
+        .courceList {
+            height: 600px;
+            overflow-y: scroll;
+            h4.vacancy {
+                color: $orange;
+                margin: 0 auto;
+                padding: 0px 0 40px 0;
+            }
+            .userPage {
+                .myList {
+                    padding: 0;
+                    display: inline-block; // padding: 0 70px;
+                    .myList-item {
+                        text-align: center;
+                        height: 50px;
+                        position: relative;
+                        border-style: none;
+                        list-style-type: none;
+                        transition: all ease 0.3s;
+                        &:hover {
+                            background: rgb(219, 85, 36);
+                            color: white;
+                            transition: all ease 0.3s;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                transition: all ease 1s;
+                                z-index: 5;
+                                top: 25%;
+                                right: -12px;
+                                border-top: 12px solid transparent;
+                                border-bottom: 12px solid transparent;
+                                border-left: 12px solid rgb(219, 85, 36);
+                            }
+                        }
+                        .myList-icon {
+                            padding-top: 4px;
+                            margin: 0 auto;
+                            width: 35px;
+                            height: 40px;
+                            img {
+                                width: 100%;
+                                height: 80%;
+                            }
+                        }
+                        a {
+                            font-size: 12px;
+                            padding: 0 10px;
+                            text-decoration: none;
+                            color: $brown;
+                        }
+                        a:active {
+                            background: rgb(219, 85, 36);
+                        }
+                    }
+                }
+                .profilImage {
+                    padding-bottom: 0;
+                    .imgArea {
+                        position: relative;
+                        margin: 0px auto;
+                        margin-bottom: 10px;
+                        width: 100px;
+                        height: 100px;
+                        img {
+                            border-radius: 100%;
+                            width: 100%;
+                        }
+                        .fa-cog, .fa-info-circle {
+                            color: $brown;
+                            top: 0px;
+                            position: absolute;
+                            right: -16px;
+                            font-size: 18px;
+                        }
+                    }
+                    h5,
+                    h6 {
+                        color: $brown;
+                        text-align: center;
+                    }
+                    h5 {
+                        font-size: 22px;
+                    }
+                    h6 {
+                        font-size: 10px;
+                    }
+                }
+                .infoBox {
+                    margin-top: 0;
+                    width: 146px;
+                    box-shadow: 20px 10px 16px 1px rgba(0, 0, 0, 0.2), 11px 11px 11px 0 rgba(0, 0, 0, 0.19);
+                    .grayBox {
+                        height: 80px;
+                    }
+                    .lightBox {
+                        height: 140px;
+                        span {
+                            padding-top: 9px;
+                        }
+                        a {
+                            line-height: 1.2;
+                        }
+                    }
+                }
+                .jobInfo {
+                    box-shadow: 8px 6px 16px 0 #514745, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    color: $brown;
+                    padding: 3px;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    height: 100px;
+                    border-radius: 10px;
+                    .up {
+                        padding: 10px;
+                        border-radius: 10px;
+                        background: #e6e2e2;
+                        h5 {
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.3;
+                            a {
+                                text-decoration: none;
+                                color: $brown;
+                            }
+                        }
+                        span.bg-orange {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: white;
+                            width: 50px;
+                            padding: 0 10px;
+                            margin: 5px 0;
+                            line-height: 1.1;
+                        }
+                        h6 {
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 1.9;
+                        }
+                        span.pro {
+                            top: 80%;
+                            right: 5%;
+                            position: absolute;
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                    h6 {
+                        font-size: 13px;
+                        font-weight: 500;
+                        padding: 4px 0 0 0;
+                    }
+                }
+            }
+            .profilImage {
+                padding: 5px 0 72px 0;
+                .imgArea {
+                    position: relative;
+                    margin: 0px auto;
+                    margin-bottom: 10px;
+                    width: 150px;
+                    height: 150px;
+                    img {
+                        border-radius: 100%;
+                        width: 100%;
+                    }
+                    .fa-camera {
+                        color: $brown;
+                        top: 128px;
+                        position: absolute;
+                        right: 0;
+                        font-size: 23px;
+                    }
+                }
+                h5,
+                h6 {
+                    color: $brown;
+                    text-align: center;
+                }
+                h5 {
+                    font-size: 22px;
+                }
+                h6 {
+                    font-size: 14px;
+                }
+            }
+            form {
+                width: 70%;
+                margin: 0 auto;
+                label.lbl {
+                    margin-bottom: 12px;
+                    color: #493c39;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .form-control {
+                    display: block;
+                    width: 100%;
+                    padding: .375rem .75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    color: #c0bcbc;
+                    background-color: #f1f1f1;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    border-radius: .25rem;
+                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                }
+                span,
+                i {
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: $brown;
+                    margin-left: 10px;
+                }
+                span.username {
+                    color: $brown;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                .col-3 {
+                    padding-right: 0;
+                }
+                .btn-home {
+                    background: #d46536;
+                    width: 140px;
+                    margin-left: 10px;
+                    height: 50px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all ease 2s;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #e8e8e8;
+                        font-weight: 500;
+                        padding: 0;
+                    }
+                }
+                .btn-add {
+                    padding: 11px 8px;
+                    margin-bottom: 1px;
+                    border-radius: 6px;
+                    color: white;
+                    &:focus {
+                        outline: none;
+                    }
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                a {
+                    padding: 27px;
+                    text-decoration: none;
+                    color: $brown;
+                    font-weight: 500;
+                }
+            }
+            .category {
+                // border: 1px solid $brown;
+                box-shadow: 6px 1px 16px 0 #555657, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 110px;
+                height: 45px;
+                background: $orange;
+                border-radius: 4px;
+                color: $light;
+                padding: 15px;
+                margin-top: 10px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: $light;
+                }
+            }
+            form.form-horizontal {
+                width: 100%;
+            }
+            form.form-style {
+                width: 60%;
+                margin-left: 38%;
+            }
+            form.form-inline {
+                .form-control {
+                    display: block;
+                    padding: .375rem .75rem;
+                    font-size: 12px;
+                    line-height: 1;
+                    color: $brown;
+                    background-color: #e8e7e7;
+                    background-clip: padding-box;
+                    border: 1px solid #9c9d9e;
+                    border-radius: 3px;
+                    height: 29px;
+                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                }
+                .date {
+                    margin-right: 26px;
+                    height: 27px;
+                    background: #c9c0c000;
+                    border: 1px solid #a29f9e;
+                    padding: 2px 4px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    h6 {
+                        padding-top: 3px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 12px;
+                    }
+                }
+                .btn-refresh {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    background-image: url('../Files/refresh.png') no-repeat;
+                    border-radius: 5px;
+                    color: #a09a98;
+                    width: 40px;
+                    font-size: 14px;
+                    height: 29px;
+                    margin: 0 auto;
+                }
+                .styled-select {
+                    background: url('../Files/186411-16.png') no-repeat 96% 46%;
+                    height: 29px;
+                    overflow: hidden;
+                    width: 240px;
+                    select {
+                        background: transparent;
+                        border: none;
+                        font-size: 14px;
+                        height: 29px;
+                        padding: 5px;
+                        /* If you add too much padding here, the options won't show in IE */
+                        width: 195px;
+                    }
+                }
+                .semi-square {
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                }
+                .blue {
+                    background-color: #706360;
+                }
+                .blue select {
+                    color: #fff;
+                    option {
+                        color: $brown;
+                    }
+                }
+            }
+            .jobInfo {
+                box-shadow: 8px 6px 16px 0 #514745, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                color: $brown;
+                padding: 3px;
+                height: 130px;
+                margin-top: 20px;
+                .up {
+                    position: relative;
+                    padding: 10px;
+                    background: #eeeeee;
+                    h5 {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 1.3;
+                        a {
+                            text-decoration: none;
+                            color: $brown;
+                        }
+                    }
+                    span.bg-orange {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: white;
+                        width: 50px;
+                        padding: 0 10px;
+                        margin: 5px 0;
+                        line-height: 1.1;
+                    }
+                    h6 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 1.9;
+                    }
+                    span.pro {
+                        top: 80%;
+                        right: 5%;
+                        position: absolute;
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                }
+                h6 {
+                    font-size: 13px;
+                    font-weight: 500;
+                    padding: 4px 0 0 0;
+                }
+            }
+            .infoBox {
+                box-shadow: 20px 10px 16px 1px rgba(0, 0, 0, 0.2), 11px 11px 11px 0 rgba(0, 0, 0, 0.19);
+                margin-top: 20px;
+                width: 170px;
+                .lightBox {
+                    span {
+                        padding-top: 9px;
+                    }
+                    a {
+                        line-height: 1.2;
+                    }
+                }
+            }
+            .infoVacancy {
+                padding: 2px 5px;
+                width: 100%;
+                height: 23px;
+                background: #eeeeee;
+                margin-top: 1px;
+                h6.head {
+                    font-size: 13px;
+                    color: $brown;
+                    font-weight: 500;
+                    span {
+                        font-size: 12px;
+                        color: $orange;
+                    }
+                }
+                .editBox,
+                .deleteBox {
+                    font-size: 12px;
+                    margin-left: 5px;
+                    padding: 4px;
+                    width: 20px;
+                    height: 20px;
+                    color: $brown;
+                    background: $orange;
+                    display: inline-block;
+                    float: right;
+                    a {
+                        text-decoration: none;
+                        color: $brown;
+                    }
+                }
+            }
+        }
+        .courceList::-webkit-scrollbar {
+            width: 5px;
+        }
+        /* Track */
+        .courceList::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        /* Handle */
+        .courceList::-webkit-scrollbar-thumb {
+            background: $brown;
+        }
+        /* Handle on hover */
+        .courceList::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .recommends {
+            background: $brown;
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 3px;
+            .infoBox {
+                width: 170px;
+                height: 200px;
+                margin: 20px 10px 10px 10px;
+                padding: 10px 0;
+            }
+            .col-md-6 {
+                padding-top: 8px;
+            }
+            .slideSection {
+                .slide {
+                    position: relative;
+                    .slowSlider {
+                        transition: .5s ease;
+                        width: 150%;
+                    }
+                }
+            }
+            input {
+                border-radius: 5px;
+                width: 180px;
+                height: 19px;
+            }
+            input:focus {
+                border-style: none;
+                outline: none;
+            }
+            button.addon {
+                border-width: 2px;
+                border: 1px solid lightgray;
+                border-color: gray;
+                border-image: initial;
+                border-radius: 5px;
+                right: 33px;
+                width: 25px;
+                height: 18px;
+                top: 9px;
+                position: absolute;
+                outline: none;
+            }
+            .btn-left {
+                position: absolute;
+                margin-right: 15px;
+                right: 4%;
+            }
+            .btn-right {
+                position: absolute;
+                right: 2%;
+            }
+        }
+        .recommends,
+        .courceList {
+            .header {
+                padding-top: 10px;
+                font-size: 18px;
+                text-align: center;
+                color: $light;
+            }
+            .infoBox {
+                a {
+                    text-decoration: none;
+                } // .imageBox {
+                //     width: 100%;
+                //     height: 50px;
+                //     img {
+                //         width: 100%;
+                //         height: 100%;
+                //     }
+                // }
+                .grayBox {
+                    position: relative;
+                    width: 100%;
+                    background: #adadad;
+                    height: 100px;
+                    .options {
+                        position: absolute;
+                        width: 16px;
+                        height: 25px;
+                        background: white;
+                        right: 15px;
+                        top: 15px;
+                        .points {
+                            display: block;
+                            margin-top: 4px;
+                            margin-left: 6px;
+                            width: 3px;
+                            height: 3px;
+                            border-radius: 100%;
+                            background: gray;
+                        }
+                    }
+                }
+                .lightBox {
+                    padding-top: 10px;
+                    width: 100%;
+                    height: 150px;
+                    background: lightgray;
+                }
+                a {
+                    text-decoration: none;
+                    color: $brown;
+                }
+                .h6 {
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: $brown;
+                }
+                p.p {
+                    margin-bottom: 2rem;
+                }
+                .p {
+                    font-size: 10px;
+                    color: $brown;
+                    font-weight: 200;
+                }
+                .paragraf {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .bg-gray {
+                    background: #dbdde1;
+                }
+                .bg-brown {
+                    background: $brown;
+                }
+                .col-md-6 a,
+                span {
+                    text-decoration: none;
+                    color: $orange;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.films,
+.books,
+.courses
+ {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    .col-md-6 {
+        padding-top: 8px;
+    }
+    .slideSection{
+        .slide{
+            position: relative;
+             .slowSlider{
+                transition: .5s ease;
+                 width: 150%;
+             }
+         }
+    }
+    
+    input {
+        border-radius: 5px;
+        width: 180px;
+        height: 19px;
+    }
+    input:focus {
+        border-style: none;
+        outline: none;
+    }
+    button.addon {
+        border-width: 2px;
+        border: 1px solid lightgray;
+        border-color: gray;
+        border-image: initial;
+        border-radius: 5px;
+        right: 33px;
+        width: 25px;
+        height: 18px;
+        top: 9px;
+        position: absolute;
+        outline: none;
+    }
+    .btn-left {
+        position: absolute;
+        margin-right: 15px;      
+        right: 4%;
+    }
+    .btn-right{
+        position: absolute;
+        right: 2%;
+    }
+}
+
+.films,
+.books,
+.courses {
+    .header {
+        color: lightgray;
+    }
+    .infoBox {
+        margin-bottom: 10px;
+        border-radius: 5px;
+       
+        a {
+            text-decoration: none;
+        }
+        .imageBox {
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            img {
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .paragraf {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.films {
+  background: $brown;
+  .infoBox {
+    width: 130px;
+    height: 215px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    
+    a {
+        text-decoration: none;
+    }
+    .imageBox {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .paragraf {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+h6{
+    display: inline-block;
+    text-transform: uppercase;
+    color: $spacegray;
+    font-size: 18px;
+    font-weight: 400;
+}
+p{
+    color: $spacegray;
+    line-height: 1.5;
+    font-size: 14px;
+}
+span{
+    display: block;
+    color: $orange;
+    line-height: 1.5;
+    font-size: 12px;
+}
+.not-checked{
+    margin-top: 8px;
+    margin-right: 4px;
+    font-size: 19px;
+    color: $spacegray;
+}
+.checkin{
+    margin-top: 0;
+    margin-right: 4px;
+    font-size: 13px;
+    color: yellow
+}
+.checked{
+    margin-top: 0;
+    margin-right: 4px;
+    font-size: 16px;
+    color: yellow
+}
+.col-md-3{
+    .row{
+        text-align: center;
+    }
+    
+    padding-top: 20px;
+    span{
+        
+        display: inline-block;
+    }
+}
+}
+
+.books {
+    background: url('../Files/walpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses {
+    background: url('../Files/edu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
