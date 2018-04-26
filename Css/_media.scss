@@ -1,0 +1,219 @@
+//////// Media For Home Page
+@media only screen and (max-width:749px) {
+    #top,
+    #topNav {
+        display: none;
+    }
+    #navMobile {
+        display: block;
+        .container {
+            width: 100%;
+        }
+        ul.myList {
+            // background: $brown;
+            display: none;
+            z-index: 10;
+            width: 65px;
+            .myList-item:hover {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+        .list-inline-mobile {
+            width: 100%;
+        }
+        li:not(:last-child) {
+            margin-right: 20px;
+        }
+        .list-inline-item.img {
+            padding-top: 0;
+        }
+        .list-inline-item.icon {
+            padding-top: 10px;
+        }
+    }
+    #home {
+        .embed-responsive.embed-responsive-4by3{
+            display: block;
+        }
+        .embed-responsive.embed-responsive-16by9{
+            display: none;
+        }
+        .homeMob{
+            margin-top: 150px !important;
+        }
+        margin-top: 0 !important;
+        height: 800px;
+        .books{
+            height: 800px !important;
+            .col-8.padd{
+                padding-left: 25px;
+            }
+        }
+        .container {
+            width: 100%;
+        }
+        ul.myList {
+            display: none;
+            background: $brown;
+            top: 0;
+            left: 0;
+        }
+        .wrapper .about {
+            display: none;
+        }
+        .films.hidden-md {
+            display: none;
+        }
+        .films-mob,
+        .books-mob,
+        .cource-mob {
+            display: block;
+        }
+        .mb-hidden,
+        .cr-hidden {
+            display: none;
+        }
+         .row.career{
+            display: none;
+
+        }
+        .courceList.vacancy{
+            height: 800px;
+            .form-control{
+                display: block;
+                padding: 5px !important;
+            }
+        }
+        .films-mob .films,
+        .books-mob .books,
+        .cource-mob .courceList {
+            display: block;
+            .col-md-3.col-2 {
+                padding-left: 0 !important;
+            }
+            form {
+                width: 100% !important;
+                margin-left: 0 !important;
+                .form-group {
+                    margin-bottom: 0;
+                    .date.mob {
+                        margin-right: 0px !important;
+                        height: 27px;
+                        background: #c9c0c000;
+                        border: none !important;
+                        padding: 2px 4px;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        h6 {
+                            display: inline-block;
+                            text-transform: uppercase;
+                            color: #6f5959;
+                        }
+                    }
+                   
+                }
+                .form-control{
+                    display: block;
+                    padding: 5px !important;
+                }
+                .col-8 .btn-brown{
+                    width: 98px !important;
+
+                }
+                .col-2.mob{
+                    padding-right: 0px !important;
+                    // padding-left: 0px !important;
+                }
+            }
+            .infoBox {
+                width: 100px;
+                height: 200px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                padding-top: 10px;
+                .h6 {
+                    font-size: 9px;
+                    font-weight: 700;
+                    color: #493c39;
+                }
+                .lightBox {
+                    padding-top: 10px;
+                    width: 100%;
+                    height: 100px;
+                    background: lightgray;
+                    span {
+                        padding-top: 0 !important;
+                        position: absolute;
+                        right: 10px;
+                        top: -8px;
+                        font-size: 11px;
+                    }
+                }
+                h6.p {
+                    display: none;
+                }
+            }
+            .checked {
+                margin-top: 0px;
+                margin-right: 2px;
+                font-size: 13px;
+                color: yellow;
+            }
+            h6 {
+                display: inline-block;
+                text-transform: uppercase;
+                color: #d8d7d7;
+                font-size: 14px;
+                font-weight: 400;
+                a {
+                    text-decoration: none;
+                    color: #d8d7d7;
+                }
+            }
+        }
+    }
+    #text {
+        display: block;
+        position: absolute;
+        top: 13%;
+        left: 25%;
+        background: transparent;
+        color: #d8d0ce;
+        .container {
+            width: 100%;
+            h4 {
+                font-size: 20px;
+            }
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+    #footer {
+        display: none;
+    }
+    .signIn {
+        position: fixed;
+        z-index: 11 !important;
+        width: 350px !important;
+        padding: 0 15px !important;
+        background: #db5524 !important;
+        top: 11% !important;
+        right: 3% !important;
+        bottom: 30% !important;
+    }
+    .register {
+        height: 562px !important;
+        position: fixed !important;
+        z-index: 11 !important;
+        width: 350px !important;
+        padding: 0 20px !important;
+        background: #db5524 !important;
+        top: 11% !important;
+        right: 3% !important;
+        bottom: 30% !important;
+    }
+}

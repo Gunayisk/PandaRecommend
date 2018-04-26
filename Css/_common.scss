@@ -6,6 +6,10 @@
     background: transparent;
 }
 
+.orange {
+    color: $orange;
+}
+
 .bg-orange {
     background: $orange;
 }
@@ -45,12 +49,274 @@
 .width {
     width: 90px;
 }
-.height{
+
+.height {
     height: 343px;
 }
+
 .cr-List {
     padding-top: 15px;
 }
-.borderBottom{
+
+.borderBottom {
     border-bottom: 1px solid #4f4f4f;
+}
+
+.mg-top {
+    margin-top: 50px;
+}
+
+.float-right {
+    float: right;
+}
+
+.social-top {
+    margin-top: 45px;
+}
+
+.auto {
+    margin: 0 auto;
+}
+
+.not-checked {
+    margin-top: 8px;
+    margin-right: 4px;
+    font-size: 14px;
+    color: #beb6b6;
+}
+
+.checkin {
+    margin-top: 0;
+    margin-right: 4px;
+    font-size: 13px;
+    color: yellow ;
+}
+
+.checked-gray {
+    margin-top: 0;
+    margin-right: 4px;
+    font-size: 13px;
+    color: #beb6b6;
+}
+
+.checked {
+    margin-top: 0;
+    margin-right: 4px;
+    font-size: 16px;
+    color: yellow
+}
+
+.myul {
+    display: block;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.myul .list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+p.catP {
+    color: gray;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#navMobile {
+    display: none;
+    background: #e8e8e8; // padding-bottom: 12px;
+    height: 50px;
+    border-bottom: 1px solid $spacegray;
+    color: $brown;
+    .myList {
+        transition: all cubic-bezier(0.25, 0.1, 0.72, 0.31) 0.3s;
+        background: #706360;
+        height: 784px;
+        padding: 0;
+        display: inline-block; // padding: 0 70px;
+        .myList-item {
+            width: 65px;
+            text-align: center;
+            height: 70px;
+            position: relative;
+            list-style-type: none;
+            transition: all ease 0.3s;
+            &:hover {
+                background: rgb(219, 85, 36);
+                color: white;
+                transition: all ease 0.3s;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    transition: all ease 1s;
+                    z-index: 5;
+                    top: 25%;
+                    right: -12px;
+                    border-top: 12px solid transparent;
+                    border-bottom: 12px solid transparent;
+                    border-left: 12px solid rgb(219, 85, 36);
+                }
+            }
+            .myList-icon {
+                margin: 0 auto;
+                width: 35px;
+                height: 40px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            a {
+                font-size: 12px;
+                padding: 0 10px;
+                text-decoration: none;
+                color: rgb(216, 208, 206);
+            }
+            a:active {
+                background: rgb(219, 85, 36);
+            }
+        }
+    }
+    .list-inline-mobile {
+        display: inline-block;
+        ul.list-inline {
+            // display: flex;
+            // justify-content: center;
+            li.lang,
+            li.usr {
+                position: relative;
+                ul {
+                    display: none;
+                    position: absolute;
+                    -webkit-padding-start: 0;
+                    left: -7px;
+                    list-style-type: none;
+                    background: #e8e8e8;
+                    z-index: 10;
+                    padding: 10px 5px;
+                    li {
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-right: 0;
+                        line-height: 1.5;
+                        a {
+                            text-decoration: none;
+                            color: $brown;
+                        }
+                    }
+                }
+            }
+            li:first-child {
+                padding-top: 0;
+            }
+            li:not(:nth-child(4)) {
+                padding-top: 10px; // margin-right: 25px;
+                .fas,
+                .fab {
+                    font-size: 20px;
+                }
+                .fas.fa-bars {
+                    transition: all ease 1s;
+                    padding-top: 0; // font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+#text {
+    display: none;
+}
+
+#search {
+    display: none;
+    .container {
+        width: 100%;
+        .row {
+            padding-bottom: 5px;
+        }
+        .border-bottom-row {
+            border-bottom: 1px solid #d4d4d4 !important;
+        }
+        .text-brown {
+            position: absolute;
+            top: 60%;
+            font-size: 19px;
+            right: 10px;
+            text-decoration: none;
+            color: $brown;
+        }
+        .results {
+            padding: 16px 0px 0px 10px;
+            height: 30px;
+            width: 100%;
+            span.text {
+                margin-top: 10px;
+                font-size: 15px;
+                left: 10px;
+                text-decoration: none;
+                color: #493c39;
+            }
+            a.text-danger {
+                cursor: pointer;
+                float: right; // margin-top: 10px;
+                font-size: 17px;
+                right: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+    background: #e8e8e8;
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    z-index: 12;
+    #imaginary_container {
+        margin-top: 3%;
+    }
+    input {
+        background: #dcd9d9;
+    }
+    .stylish-input-group .input-group-addon {
+        background: #dcd9d9 !important;
+        button {
+            padding-top: 10px;
+            color: gray;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+    .stylish-input-group .form-control {
+        border-right: 0;
+        box-shadow: 0 0 0;
+        border-color: #ccc;
+    }
+    .stylish-input-group button {
+        border: 0;
+        background: transparent;
+    }
+}
+.films-mob, .books-mob, .cource-mob{
+    display: none;
+}
+.block{
+    display: block !important;
+    margin-top: 6px;
+    @media only screen and (max-width: 749px){
+        margin-top: 1px !important;
+    }
+}
+.info-height{
+    height: 235px;
+}
+.embed-responsive.embed-responsive-4by3{
+    display: none;
+}
+.homeMob{
+    margin-top: 0;
 }

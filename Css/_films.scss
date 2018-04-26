@@ -1,23 +1,21 @@
 .films,
 .books,
-.courses
- {
+.courses {
     width: 100%;
     padding-bottom: 10px;
     margin-bottom: 3px;
     .col-md-6 {
         padding-top: 8px;
     }
-    .slideSection{
-        .slide{
+    .slideSection {
+        .slide {
             position: relative;
-             .slowSlider{
+            .slowSlider {
                 transition: .5s ease;
-                 width: 150%;
-             }
-         }
+                width: 150%;
+            }
+        }
     }
-    
     input {
         border-radius: 5px;
         width: 180px;
@@ -42,10 +40,10 @@
     }
     .btn-left {
         position: absolute;
-        margin-right: 15px;      
+        margin-right: 15px;
         right: 4%;
     }
-    .btn-right{
+    .btn-right {
         position: absolute;
         right: 2%;
     }
@@ -60,9 +58,9 @@
     .infoBox {
         margin-bottom: 10px;
         border-radius: 5px;
-       
         a {
             text-decoration: none;
+            color: $light;
         }
         .imageBox {
             border-radius: 5px;
@@ -74,91 +72,423 @@
                 height: 100%;
             }
         }
+        h6 {
+            display: block;
+            font-size: 13px;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
         .paragraf {
-            font-size: 14px;
+            font-size: 10px;
             font-weight: 400;
+            text-align: center;
         }
     }
 }
 
 .films {
-  background: $brown;
-  .infoBox {
-    width: 130px;
-    height: 215px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding-top: 10px;
-    
-    a {
-        text-decoration: none;
-    }
-    .imageBox {
-        width: 100%;
-        height: 100%;
-        img {
+    background: $brown;
+    .infoBox {
+        width: 130px;
+        height: 210px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+        }
+        .imageBox {
             width: 100%;
             height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .paragraf {
+            font-size: 14px;
+            font-weight: 400;
         }
     }
-    .paragraf {
-        font-size: 14px;
+    h6 {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $spacegray;
+        font-size: 18px;
         font-weight: 400;
     }
-}
-h6{
-    display: inline-block;
-    text-transform: uppercase;
-    color: $spacegray;
-    font-size: 18px;
-    font-weight: 400;
-}
-p{
-    color: $spacegray;
-    line-height: 1.5;
-    font-size: 14px;
-}
-span{
-    display: block;
-    color: $orange;
-    line-height: 1.5;
-    font-size: 12px;
-}
-.not-checked{
-    margin-top: 8px;
-    margin-right: 4px;
-    font-size: 19px;
-    color: $spacegray;
-}
-.checkin{
-    margin-top: 0;
-    margin-right: 4px;
-    font-size: 13px;
-    color: yellow
-}
-.checked{
-    margin-top: 0;
-    margin-right: 4px;
-    font-size: 16px;
-    color: yellow
-}
-.col-md-3{
-    .row{
-        text-align: center;
+    p {
+        color: $spacegray;
+        line-height: 1.5;
+        font-size: 14px;
     }
-    
-    padding-top: 20px;
-    span{
-        
-        display: inline-block;
+    span {
+        display: block;
+        color: $orange;
+        line-height: 1.5;
+        font-size: 12px;
     }
-}
+    .not-checked {
+        margin-top: 8px;
+        margin-right: 4px;
+        font-size: 19px;
+        color: $spacegray;
+    }
+    .checkin {
+        margin-top: 0;
+        margin-right: 4px;
+        font-size: 13px;
+        color: yellow
+    }
+    .checked-gray {
+        margin-top: 0;
+        margin-right: 4px;
+        font-size: 13px;
+        color: $spacegray;
+    }
+    .checked {
+        margin-top: 0;
+        margin-right: 4px;
+        font-size: 16px;
+        color: yellow
+    }
+    .col-md-3 {
+        .row {
+            text-align: center;
+            .col-md-6 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        padding-top: 20px;
+        span {
+            display: inline-block;
+        }
+    }
+    form.form-inline {
+        margin: 20px 0;
+        width: 100%;
+        .col-md-3 {
+            padding-top: 0;
+        }
+        .form-control {
+            display: block;
+            padding: .375rem .75rem;
+            font-size: 12px;
+            line-height: 1;
+            color: $brown;
+            background-color: #e8e7e7;
+            background-clip: padding-box;
+            border: 1px solid #9c9d9e;
+            border-radius: 3px;
+            height: 29px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        .date {
+            margin-right: 26px;
+            height: 27px;
+            background: #c9c0c000;
+            border: 1px solid #a29f9e;
+            padding: 2px 4px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            h6 {
+                padding-top: 3px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+        .btn-refresh {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: url('../Files/refresh.png') no-repeat;
+            border-radius: 5px;
+            color: #a09a98;
+            width: 40px;
+            font-size: 14px;
+            height: 29px;
+            margin: 0 auto;
+        }
+        .styled-select {
+            background: url(../Files/186411-16.png) no-repeat 95% 46%;
+            height: 29px;
+            overflow: hidden;
+            width: 180px;
+            select {
+                background: transparent;
+                border: none;
+                font-size: 14px;
+                height: 29px;
+                padding: 5px;
+                /* If you add too much padding here, the options won't show in IE */
+                width: 195px;
+            }
+        }
+        .semi-square {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .blue {
+            background-color: #706360;
+        }
+        .blue select {
+            color: #fff;
+            option {
+                color: $brown;
+            }
+        }
+    }
 }
 
-.books {
-    background: url('../Files/walpaper.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.books{
+    background: $brown;
+    height: 600px;
+    overflow-y: scroll;
+    .infoBox {
+        width: 130px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+        }
+        .imageBox {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .paragraf {
+            font-size: 11px;
+            font-weight: 400;
+        }
+    }
+    h6 {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $spacegray;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    h6 a.auther,
+    .auther {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $spacegray;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    p {
+        color: $spacegray;
+        line-height: 1.5;
+    }
+    span {
+        display: inline-block;
+        color: $orange;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .col-md-3 {
+        .row {
+            text-align: center;
+            .col-md-6 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+        padding-top: 20px;
+        span {
+            display: inline-block;
+        }
+    }
+    form.form-inline {
+        margin: 20px 0;
+        width: 100%;
+        .col-md-3 {
+            padding-top: 0;
+        }
+        .form-control {
+            display: block;
+            padding: .375rem .75rem;
+            font-size: 12px;
+            line-height: 1;
+            color: $brown;
+            background-color: #e8e7e7;
+            background-clip: padding-box;
+            border: 1px solid #9c9d9e;
+            border-radius: 3px;
+            height: 29px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        .date {
+            margin-right: 26px;
+            height: 27px;
+            background: #c9c0c000;
+            border: 1px solid #a29f9e;
+            padding: 2px 4px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            h6 {
+                padding-top: 3px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+        .btn-refresh {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-image: url('../Files/refresh.png') no-repeat;
+            border-radius: 5px;
+            color: #a09a98;
+            width: 40px;
+            font-size: 14px;
+            height: 29px;
+            margin: 0 auto;
+        }
+        .styled-select {
+            background: url(../Files/186411-16.png) no-repeat 95% 46%;
+            height: 29px;
+            overflow: hidden;
+            width: 180px;
+            select {
+                background: transparent;
+                border: none;
+                font-size: 14px;
+                height: 29px;
+                padding: 5px;
+                /* If you add too much padding here, the options won't show in IE */
+                width: 195px;
+            }
+        }
+        .semi-square {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .blue {
+            background-color: #706360;
+        }
+        .blue select {
+            color: #fff;
+            option {
+                color: $brown;
+            }
+        }
+    }
+    .facebook,
+    .twitter,
+    .google,
+    .linkedin,
+    .pinterest {
+        padding: 2px 7px;
+        color: white;
+        background: rgba(243, 210, 100, 0.5);
+        a {
+            text-decoration: none;
+            color: white;
+            i span {
+                color: white;
+                font-size: 13px;
+            }
+            .fab {
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+    .facebook{
+        background: #4267b2;
+    }
+    .twitter{
+        background: #1da1f2;
+    }
+    .google{
+        background: #db4437;
+    }
+    .linkedin{
+        background: linear-gradient(45deg, #0077b5,#008891);
+        background-attachment: fixed;
+        background-color: #0077b5;
+    }
+    .pinterest{
+        background-color: rgb(189, 8, 28);
+    }
+    .col-md-12 .video{
+        width: 500px;
+       margin: 0 auto;
+       border-radius: 10px;
+       video{
+        max-width: 100%;
+        border-radius: 10px;
+       }
+       video::-webkit-media-controls-panel {
+           margin: 0 auto;
+        width: 75%;
+        height: 32px;
+        background: gray;
+        border-radius: 5px;
+        color: gray;
+        position: absolute;
+        bottom: 0;
+        left: 12.5%;
+        @media only screen and (max-width:749px){
+            width: 100% !important;
+            left: 0 !important;
+        }
+      }
+      
+    }
+}
+
+.books::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.books::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+.books::-webkit-scrollbar-thumb {
+    background: $brown;
+}
+
+/* Handle on hover */
+
+.books::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 68, 68);
+}
+
+.films::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.films::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+.films::-webkit-scrollbar-thumb {
+    background: $brown;
+}
+
+/* Handle on hover */
+
+.films::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 68, 68);
 }
 
 .courses {

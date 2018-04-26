@@ -87,4 +87,50 @@ $(document).ready(function(){
             });
 
     });
+    //////////////// Book Slider Section is Start /////////////
+     $('.books .slider img').click(function(){
+        
+     });
+
+
+     ////////// Mobile Pages Scripts /////////
+     ///////// Navigation Bars Open//////////
+     $('#navMobile ul.list-inline .fa-bars').click(function(){
+        $('#navMobile ul.list-inline .clicked i').removeClass('fa-bars').addClass('fa-times');
+        $('#navMobile ul.list-inline .fa-globe').hide();
+        $('#navMobile ul.list-inline .fa-search').hide();
+        $('#navMobile .list-inline-mobile').css('width', '79%');
+        $('#navMobile .list-inline-mobile li').css({'marginRight': '20px'});
+        $('#navMobile ul.myList').css('display', 'block');
+     });
+     ///////// Navigation Bars Close//////////
+     $('#navMobile ul.list-inline .fa-times').click(function(){
+        $('#navMobile ul.list-inline .clicked .fa-times').removeClass('fa-times').addClass('fa-bars');
+        $('#navMobile ul.myList').css('display', 'none');
+        $('#navMobile .list-inline-mobile').css('width', '100%');
+        $('#navMobile .list-inline-mobile li').css({'marginRight': '13px'});
+        });
+
+    //////////// Language Icon Click////////////
+    $('#navMobile ul.list-inline .fa-globe').click(function(){
+        $('#navMobile ul.list-inline .lang-menu').slideToggle('slow');
+    })
+
+      //////////// Login Icon Click//////////// 
+      $('#navMobile ul.list-inline .fa-user-circle').click(function(){
+        $('#navMobile ul.list-inline .user-log').slideToggle();
+      }) 
+      $('#navMobile ul.list-inline .user-log .in').click(function(){
+          $('#login').show();
+          $('.signIn').show();
+      })
+      $('#navMobile ul.list-inline .user-log .up').click(function(){
+        $('#login').show();
+        $('.register').show();
+    })
+
+    /////////////// Search Icon Click //////////////
+    $('#navMobile ul.list-inline .fa-search').click(function(){
+        $('#search').show();
+    })
   });

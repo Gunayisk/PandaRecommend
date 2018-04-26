@@ -4,6 +4,9 @@
     padding: 100px 0;
     background: #e8e8e8;
     height: 600px;
+    @media only screen and(max-width: 749px){
+        height: 800px;
+    }
     color: #786e6c;
     h3, h6{
         position: absolute;
@@ -15,10 +18,19 @@
     h3{
         bottom: 45%;
         left: 30%;
+        @media only screen and (max-width:749px){
+            left: 7% !important;
+            bottom: 40%;
+        }
     }
     h6{
         bottom: 35%;
         left: 34%;
+        @media only screen and (max-width:749px){
+            left: 7% !important;
+            left: 32%;
+          
+        }
 
     }
     img.error{
@@ -26,6 +38,10 @@
         left: 36%;
         width: 350px;
         height: 170px;
+        @media only screen and (max-width:749px){
+            left: 7% !important;
+            
+        }
     }
     .btn-home{
         background: $orange;
@@ -35,6 +51,10 @@
         position: absolute;
         bottom: 20%;
         left: 44%;
+        @media only screen and (max-width:749px){
+            left: 33% !important;
+          
+        }
         cursor: pointer;
         transition: all ease 2s;
         &:focus{
