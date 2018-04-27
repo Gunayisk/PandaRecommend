@@ -32,6 +32,9 @@
         .list-inline-item.icon {
             padding-top: 10px;
         }
+        .border-none{
+            border-style: none !important;
+        }
     }
     #home {
         .embed-responsive.embed-responsive-4by3{
@@ -90,6 +93,7 @@
         .books-mob .books,
         .cource-mob .courceList {
             display: block;
+            padding-top: 0 !important;
             .col-md-3.col-2 {
                 padding-left: 0 !important;
             }
@@ -171,6 +175,65 @@
                 a {
                     text-decoration: none;
                     color: #d8d7d7;
+                }
+            }
+            .myList {
+                padding: 0;
+                display: inline-block; // padding: 0 70px;
+                .myList-item {
+                    text-align: center;
+                    height: 50px;
+                    position: relative;
+                    border-style: none;
+                    list-style-type: none;
+                    transition: all ease 0.3s;
+                    @media only screen and (max-width:749px){
+                        display: inline-block;
+                        margin-left: 50px;
+                        width: 60px;
+                    }
+                    &:hover {
+                        background: rgb(219, 85, 36);
+                        color: white;
+                        transition: all ease 0.3s;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            transition: all ease 1s;
+                            z-index: 5;
+                            top: 25%;
+                            right: -12px;
+                            border-top: 12px solid transparent;
+                            border-bottom: 12px solid transparent;
+                            border-left: 12px solid rgb(219, 85, 36);
+                            @media only screen and (max-width:749px){
+                                border-left: 12px solid transparent;
+                                border-right: 12px solid transparent;
+                                border-top: 12px solid rgb(219, 85, 36);
+                                top: 98%;
+                                right: 17px;
+                            }
+                        }
+                    }
+                    .myList-icon {
+                        padding-top: 4px;
+                        margin: 0 auto;
+                        width: 35px;
+                        height: 40px;
+                        img {
+                            width: 100%;
+                            height: 80%;
+                        }
+                    }
+                    a {
+                        font-size: 12px;
+                        padding: 0 10px;
+                        text-decoration: none;
+                        color: $brown;
+                    }
+                    a:active {
+                        background: rgb(219, 85, 36);
+                    }
                 }
             }
         }

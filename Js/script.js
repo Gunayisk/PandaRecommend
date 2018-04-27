@@ -133,4 +133,11 @@ $(document).ready(function(){
     $('#navMobile ul.list-inline .fa-search').click(function(){
         $('#search').show();
     })
+    ///////////// Focus search input /////////////
+    // $('#topNav .side input.searchInput').focus(function(){
+    //     $('#search').css('display', 'block');
+    // })
+    // $('#topNav .side button.btn').click(function(){
+    //     $('#search').css('display', 'block');
+    // })
   });

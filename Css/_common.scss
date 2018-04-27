@@ -5,7 +5,12 @@
 .bg-transparent {
     background: transparent;
 }
+.bg-gray{
+    @media only screen and(max-width:749px){
+        background: #e8e8e8 !important;
+    }
 
+}
 .orange {
     color: $orange;
 }
@@ -49,11 +54,18 @@
 .width {
     width: 90px;
 }
-
+.imgWidth{
+    width: 100%;
+    height: 100%;
+}
 .height {
     height: 343px;
 }
-
+.heigh{
+    @media only screen and (max-width:749px){
+        height: 800px !important;
+    }
+}
 .cr-List {
     padding-top: 15px;
 }
@@ -129,8 +141,10 @@ p.catP {
     display: none;
     background: #e8e8e8; // padding-bottom: 12px;
     height: 50px;
-    border-bottom: 1px solid $spacegray;
     color: $brown;
+    .nav-bottom{
+        border-bottom: 1px solid $spacegray;
+    }
     .myList {
         transition: all cubic-bezier(0.25, 0.1, 0.72, 0.31) 0.3s;
         background: #706360;
@@ -308,7 +322,7 @@ p.catP {
     display: block !important;
     margin-top: 6px;
     @media only screen and (max-width: 749px){
-        margin-top: 1px !important;
+        margin-top: 0px !important;
     }
 }
 .info-height{
@@ -320,3 +334,10 @@ p.catP {
 .homeMob{
     margin-top: 0;
 }
+ul.mylist.bg-gray{
+    margin-bottom: 0;
+}
+// input.searchInput:focus #search{
+//         display: block;
+    
+// }
