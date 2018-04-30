@@ -522,6 +522,9 @@ body #footer * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+body .question {
+  display: block !important;
+}
 
 .films,
 .books,
@@ -1784,8 +1787,16 @@ body #footer * {
   background: #706360;
 }
 
+.bg-darkbrown {
+  background: #493c39;
+}
+
 .bg-white {
   background: white;
+}
+
+.color-brown {
+  color: #513b3b !important;
 }
 
 .btn-brown {
@@ -2106,6 +2117,28 @@ ul.mylist.bg-gray {
   margin-bottom: 0;
 }
 
+a.next {
+  font-size: 18px;
+  position: absolute;
+  right: 40px;
+  top: 14px;
+  text-decoration: none;
+  color: #493c39;
+}
+
+a.previous {
+  position: absolute;
+  top: 14px;
+  left: 37px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #493c39;
+}
+
+ul.list-inline.mob {
+  display: none;
+}
+
 .sliderWrapper {
   width: 73%;
   margin: auto;
@@ -2180,7 +2213,7 @@ ul.mylist.bg-gray {
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   #top,
   #topNav {
     display: none;
@@ -2404,7 +2437,7 @@ ul.mylist.bg-gray {
     transition: all ease 0.3s;
   }
 }
-@media only screen and (max-width: 749px) and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) and (max-width: 749px) {
   #home .films-mob .films .myList .myList-item,
   #home .books-mob .books .myList .myList-item,
   #home .cource-mob .courceList .myList .myList-item {
@@ -2413,7 +2446,7 @@ ul.mylist.bg-gray {
     width: 60px;
   }
 }
-@media only screen and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   #home .films-mob .films .myList .myList-item:hover,
   #home .books-mob .books .myList .myList-item:hover,
   #home .cource-mob .courceList .myList .myList-item:hover {
@@ -2435,7 +2468,7 @@ ul.mylist.bg-gray {
     border-left: 12px solid #db5524;
   }
 }
-@media only screen and (max-width: 749px) and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) and (max-width: 749px) {
   #home .films-mob .films .myList .myList-item:hover:after,
   #home .books-mob .books .myList .myList-item:hover:after,
   #home .cource-mob .courceList .myList .myList-item:hover:after {
@@ -2446,7 +2479,7 @@ ul.mylist.bg-gray {
     right: 17px;
   }
 }
-@media only screen and (max-width: 749px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   #home .films-mob .films .myList .myList-item .myList-icon,
   #home .books-mob .books .myList .myList-item .myList-icon,
   #home .cource-mob .courceList .myList .myList-item .myList-icon {
@@ -2473,6 +2506,9 @@ ul.mylist.bg-gray {
   #home .books-mob .books .myList .myList-item a:active,
   #home .cource-mob .courceList .myList .myList-item a:active {
     background: #db5524;
+  }
+  #home ul.list-inline.mob {
+    display: block;
   }
 
   #text {
@@ -2518,5 +2554,36 @@ ul.mylist.bg-gray {
     top: 11% !important;
     right: 3% !important;
     bottom: 30% !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #navMobile {
+    display: block;
+  }
+  #navMobile .container {
+    width: 100%;
+  }
+  #navMobile ul.myList {
+    display: none;
+    z-index: 10;
+    width: 65px;
+  }
+  #navMobile ul.myList .myList-item:hover:after {
+    content: none;
+  }
+  #navMobile .list-inline-mobile {
+    width: 100%;
+  }
+  #navMobile li:not(:last-child) {
+    margin-right: 13px;
+  }
+  #navMobile .list-inline-item.img {
+    padding-top: 0;
+  }
+  #navMobile .list-inline-item.icon {
+    padding-top: 10px;
+  }
+  #navMobile .border-none {
+    border-style: none !important;
   }
 }

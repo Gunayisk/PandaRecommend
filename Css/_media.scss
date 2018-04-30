@@ -1,5 +1,5 @@
 //////// Media For Home Page
-@media only screen and (max-width:749px) {
+@media only screen and (min-width:320px)and (max-width:768px) {
     #top,
     #topNav {
         display: none;
@@ -237,6 +237,9 @@
                 }
             }
         }
+        ul.list-inline.mob{
+            display: block;
+        }
     }
     #text {
         display: block;
@@ -278,5 +281,39 @@
         top: 11% !important;
         right: 3% !important;
         bottom: 30% !important;
+    }
+}
+@media only screen and(max-width: 320px){
+    #navMobile {
+        display: block;
+        .container {
+            width: 100%;
+        }
+        ul.myList {
+            // background: $brown;
+            display: none;
+            z-index: 10;
+            width: 65px;
+            .myList-item:hover {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+        .list-inline-mobile {
+            width: 100%;
+        }
+        li:not(:last-child) {
+            margin-right: 13px;
+        }
+        .list-inline-item.img {
+            padding-top: 0;
+        }
+        .list-inline-item.icon {
+            padding-top: 10px;
+        }
+        .border-none{
+            border-style: none !important;
+        }
     }
 }

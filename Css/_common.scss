@@ -26,11 +26,15 @@
 .bg-brown {
     background: #706360;
 }
-
+.bg-darkbrown{
+    background: #493c39;
+}
 .bg-white {
     background: white;
 }
-
+.color-brown{
+    color: #513b3b !important;
+}
 .btn-brown {
     border-radius: 5px;
     color: white;
@@ -336,6 +340,25 @@ p.catP {
 }
 ul.mylist.bg-gray{
     margin-bottom: 0;
+}
+a.next{
+    font-size: 18px;
+    position: absolute;
+    right: 40px;
+    top: 14px;
+    text-decoration: none;
+    color: $brown;
+}
+a.previous{
+    position: absolute;
+    top: 14px;
+    left: 37px;
+    font-size: 18px;
+    text-decoration: none;
+    color: $brown;
+}
+ul.list-inline.mob{
+    display: none;
 }
 // input.searchInput:focus #search{
 //         display: block;
