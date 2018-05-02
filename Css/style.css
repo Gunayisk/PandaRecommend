@@ -307,6 +307,12 @@ body #home .wrapper .about .logoPanda {
   width: 600px;
   height: 210px;
 }
+@media only screen and (min-width: 1500px) and (max-width: 2600px) {
+  body #home .wrapper .about .logoPanda {
+    position: absolute;
+    right: 28% !important;
+  }
+}
 body #home .wrapper .about .logoPanda img {
   width: 100%;
 }
@@ -316,6 +322,12 @@ body #home .wrapper .about .address {
   right: 40%;
   font-size: 14px;
   font-weight: 500;
+}
+@media only screen and (min-width: 1500px) {
+  body #home .wrapper .about .address {
+    position: absolute;
+    right: 48% !important;
+  }
 }
 body #home .wrapper .about .address a {
   text-decoration: none;
