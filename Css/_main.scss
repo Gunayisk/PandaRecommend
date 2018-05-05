@@ -145,7 +145,16 @@ body {
             ul.navTop{
                 margin-top: 10px;
                 .side {
-                   width: 119px;
+                    padding: 5px 0 0 0;
+                    input {
+                        height: 25px;
+                        width: 50%;
+                        padding-left: 10px;
+                        border-radius: 4px;
+                        border: none;
+                        outline: none;
+                    
+                    }
                     button {
                         background: #493c39;
                         position: absolute;
@@ -193,6 +202,7 @@ body {
                     .login {
                         background: #4e2d2d;
                         border-radius: 6px;
+                        padding-top: 8px;
                         font-size: 10px;
                         outline: none;
                         color: lightgray;
@@ -207,6 +217,7 @@ body {
                         color: #eeeeee;
                         border-radius: 6px;
                         background: rgb(240, 75, 75);
+                        padding-top: 8px;
                         font-size: 10px;
                         outline: none;
                         height: 26px;

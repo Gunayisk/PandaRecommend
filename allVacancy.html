@@ -192,10 +192,16 @@
                             <ul class="list-inline navTop">
                                 <li class="list-inline-item">
                                     <div class="side">
-                                    </div>
-                                </li>
-                                <li class="list-inline-item">
-                                    <div class="side">
+                                        <form action="">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <div class="input-group-btn">
+                                                    <button class="btn" type="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </li>
                                 <li class="list-inline-item">
@@ -203,11 +209,23 @@
                                         <a href="">Logout</a>
                                     </button>
                                 </li>
-                                <li class="list-inline-item img">
-                                    <img src="Files/johndoe.jpg" alt="" width="24" height="24" style="border-radius:100%;">
+                                <!-- <li class="list-inline-item">
+                                        <span class="span">or</span>
                                 </li>
                                 <li class="list-inline-item">
-                                    <img src="Files/world.png" alt="" width="14" height="14" style="border-radius:100%;"><select name="" id="">
+                                        <button class=" sign">
+                                                <a href="">Sign Up</a>
+                                            </button>
+                                </li> -->
+                                <!-- <li class="list-inline-item hidden"></li> -->
+                                <li class="list-inline-item img">
+                                    <img src="Files/johndoe.jpg" alt="" width="24" height="24" style="border-radius:100%; margin-left:30px;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img src="Files/world.png" alt="" width="14" height="14" style="border-radius:100%;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <select name="" id="">
                                         <option value="">Eng</option>
                                         <option value="">Rus</option>
                                         <option value="">Aze</option>
@@ -374,57 +392,567 @@
                     <div class="row">
                         <ul class="myList">
                             <li class=" myList-item classActive bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/home.png" alt="">
-                                </div>
-                                <a href="index.html">Home</a>
+                                <a href="index.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/home.png" alt="">
+                                    </div>
+                                    Home</a>
                             </li>
                             <li class="myList-item bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/education.png" alt="">
-                                </div>
-                                <a href="education.html">Education</a>
+                                <a href="education.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/education.png" alt="">
+                                    </div>
+                                    Education</a>
                             </li>
                             <li class="myList-item bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/category.png" alt="">
-                                </div>
-                                <a href="categoryFull.html">Category</a>
-                            </li>
-                            <!-- <li class="myList-item ">
-                                                                <div class="myList-icon">
-                                                                    <img src="Files/cources.png" alt="">
-                                                                </div>
-                                                                <a href="">Course</a>
-                                                            </li> -->
-                            <li class="myList-item bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/vacancy.png" alt="">
-                                </div>
-                                <a href="career.html">Career</a>
+                                <a href="categoryFull.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/category.png" alt="">
+                                    </div>
+                                    Category</a>
                             </li>
                             <li class="myList-item bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/films.png" alt="">
-                                </div>
-                                <a href="films.html">Films</a>
+                                <a href="career.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/vacancy.png" alt="">
+                                    </div>
+                                    Career</a>
                             </li>
                             <li class="myList-item bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/books.png" alt="">
-                                </div>
-                                <a href="books.html">Books</a>
+                                <a href="films.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/films.png" alt="">
+                                    </div>
+                                    Films</a>
                             </li>
                             <li class="myList-item bg-brown">
-                                <div class="myList-icon">
-                                    <img src="Files/contacts.png" alt="">
-                                </div>
-                                <a href="">Contacts</a>
+                                <a href="books.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/books.png" alt="">
+                                    </div>
+                                    Books</a>
+                            </li>
+                            <li class="myList-item bg-brown">
+                                <a href="userPage.html">
+                                    <div class="myList-icon">
+                                        <img src="Files/contacts.png" alt="">
+                                    </div>
+                                    Profil</a>
                             </li>
                         </ul>
                         <div class="wrapper">
-                            <div class="courceList bg-spacegray cr-hidden">
-                                <div class="col-md-12">
+                            <div class="courceList bg-white heigh">
+                                <div class="col-md-12 userPage">
+                                    <div class="row career bg-white">
+                                        <form action="" class="form-inline form-style">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+
+                                                    <div class="styled-select blue semi-square">
+                                                        <select class="form-control">
+                                                            <option>All</option>
+                                                            <option>The second Category</option>
+                                                            <option>The third Category</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+
+                                                    <div class="styled-select blue semi-square">
+                                                        <select class="form-control">
+                                                            <option>Category</option>
+                                                            <option>The second Category</option>
+                                                            <option>The third Category</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+
+                                                    <div class="styled-select blue semi-square">
+                                                        <select class="form-control">
+                                                            <option>Category</option>
+                                                            <option>The second Category</option>
+                                                            <option>The third Category</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 bg-white cr-List">
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6 ">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6">
+                                                    <div class="jobInfo bg-white">
+                                                        <div class="up">
+                                                            <h5>
+                                                                <a href="">designer</a>
+                                                            </h5>
+                                                            <span class="bg-orange">500-700$</span>
+                                                            <h6>Lorem ipsum dolor sit.</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="courceList bg-spacegray cr-hidden">
+                                <div class="col-md-10">
                                     <div class="row mg-bottom">
                                         <form action="" class="form-inline form-horizontal">
                                             <div class="col-md-3">
@@ -1400,7 +1928,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

@@ -192,10 +192,16 @@
                             <ul class="list-inline navTop">
                                 <li class="list-inline-item">
                                     <div class="side">
-                                    </div>
-                                </li>
-                                <li class="list-inline-item">
-                                    <div class="side">
+                                        <form action="">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <div class="input-group-btn">
+                                                    <button class="btn" type="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </li>
                                 <li class="list-inline-item">
@@ -203,11 +209,23 @@
                                         <a href="">Logout</a>
                                     </button>
                                 </li>
-                                <li class="list-inline-item img">
-                                    <img src="Files/johndoe.jpg" alt="" width="24" height="24" style="border-radius:100%;">
+                                <!-- <li class="list-inline-item">
+                                        <span class="span">or</span>
                                 </li>
                                 <li class="list-inline-item">
-                                    <img src="Files/world.png" alt="" width="14" height="14" style="border-radius:100%;"><select name="" id="">
+                                        <button class=" sign">
+                                                <a href="">Sign Up</a>
+                                            </button>
+                                </li> -->
+                                <!-- <li class="list-inline-item hidden"></li> -->
+                                <li class="list-inline-item img">
+                                    <img src="Files/johndoe.jpg" alt="" width="24" height="24" style="border-radius:100%; margin-left:30px;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img src="Files/world.png" alt="" width="14" height="14" style="border-radius:100%;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <select name="" id="">
                                         <option value="">Eng</option>
                                         <option value="">Rus</option>
                                         <option value="">Aze</option>
@@ -467,14 +485,74 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="col-md-10 bg-brown cr-List">
+                                        <div class="col-md-10 bg-spacegray cr-List">
                                             <div class="course">
+                                                <div class="row career mg-bottom">
+                                                    <form action="" class="form-inline form-style">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+
+                                                                <div class="styled-select blue semi-square">
+                                                                    <select class="form-control">
+                                                                        <option>All</option>
+                                                                        <option>The second Category</option>
+                                                                        <option>The third Category</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+
+                                                                <div class="styled-select blue semi-square">
+                                                                    <select class="form-control">
+                                                                        <option>Category</option>
+                                                                        <option>The second Category</option>
+                                                                        <option>The third Category</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+
+                                                                <div class="styled-select blue semi-square">
+                                                                    <select class="form-control">
+                                                                        <option>Category</option>
+                                                                        <option>The second Category</option>
+                                                                        <option>The third Category</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                                 <div class="row mg-bottom">
                                                     <div class="col-md-3">
                                                         <div class="infoBox">
                                                             <div class="imageBox">
                                                                 <img src="Files/guykavasaki.jpg" alt="" class="imgWidth">
                                                             </div>
+                                                            <div class="grayBox">
+                                                                    <h6>Film Name</h6>
+                                                                    <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <i class="fa fa-star checkin"></i>
+                                                                                <i class="fa fa-star checkin"></i>
+                                                                                <i class="fa fa-star checkin"></i>
+                                                                                <i class="fa fa-star checkin"></i>
+                                                                                <i class="fa fa-star checkin"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <i class="fas fa-check-circle not-checked text-success"></i>
+                                                                                    <i class="fas fa-plus-circle not-checked text-primary"></i>
+                                                                                    <i class="fas fa-minus-circle not-checked text-warning"></i>
+                                                                                    <i class="fas fa-times-circle not-checked text-danger"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
@@ -732,18 +810,16 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3 col-2">
+                                                <div class="col-md-4 col-4">
                                                     <div class="form-group">
-                                                        <div class="date mob">
-                                                            <h6>02.04.2018</h6>
-                                                        </div>
+                                                        <select class="form-control">
+                                                            <option>Category</option>
+                                                            <option>The second Category</option>
+                                                            <option>The third Category</option>
+                                                        </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-1 col-2">
-                                                    <button type="submit" class="pull-right btn-refresh">
-                                                        <i class="fas fa-sync-alt"></i>
-                                                    </button>
-                                                </div>
+
                                             </form>
                                         </div>
                                         <div class="row bg-brown">
