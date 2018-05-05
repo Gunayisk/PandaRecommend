@@ -149,15 +149,7 @@ body #topNav .col-md-12 ul.navTop {
   margin-top: 10px;
 }
 body #topNav .col-md-12 ul.navTop .side {
-  padding: 5px 0 0 0;
-}
-body #topNav .col-md-12 ul.navTop .side input {
-  height: 25px;
-  width: 50%;
-  padding-left: 10px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
+  width: 119px;
 }
 body #topNav .col-md-12 ul.navTop .side button {
   background: #493c39;
@@ -204,7 +196,6 @@ body #topNav .col-md-12 ul.navTop li button.btn:focus {
 body #topNav .col-md-12 ul.navTop li .login {
   background: #4e2d2d;
   border-radius: 6px;
-  padding-top: 8px;
   font-size: 10px;
   outline: none;
   color: lightgray;
@@ -219,7 +210,6 @@ body #topNav .col-md-12 ul.navTop li .sign {
   color: #eeeeee;
   border-radius: 6px;
   background: #f04b4b;
-  padding-top: 8px;
   font-size: 10px;
   outline: none;
   height: 26px;
@@ -2151,6 +2141,13 @@ ul.list-inline.mob {
   display: none;
 }
 
+#topNav button.sign, #topNav button.login {
+  position: relative;
+}
+#topNav button.sign span.top-area, #topNav button.login span.top-area {
+  margin-top: 0px;
+}
+
 .sliderWrapper {
   width: 73%;
   margin: auto;
@@ -2599,3 +2596,5 @@ ul.list-inline.mob {
     border-style: none !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
