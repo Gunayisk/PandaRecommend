@@ -145,42 +145,33 @@ body {
             ul.navTop{
                 margin-top: 10px;
                 .side {
-                    padding: 5px 0 0 0;
-                    input {
-                        height: 25px;
-                        width: 50%;
-                        padding-left: 10px;
-                        border-radius: 4px;
-                        border: none;
-                        outline: none;
-                    
-                    }
-                    button {
-                        background: #493c39;
-                        position: absolute;
-                        right: 0px;
-                        top: 0px;
-                        border: none;
-                        height: 25px;
-                        width: 25px;
-                        outline: none;
-                        text-align: center;
-                        font-weight: bold;
-                        padding: 0;
-                        .fa-search {
-                            font-size: 12px;
-                            color: white;
-                        }
-                    }
-                    button:hover {
-                        cursor: pointer;
-                    }
-                    #help {
-                        display: none;
-                        font-style: italic;
-                        font-size: 0.8em;
-                    }
-                }
+                    width: 119px;
+                     button {
+                         background: #493c39;
+                         position: absolute;
+                         right: 0px;
+                         top: 0px;
+                         border: none;
+                         height: 25px;
+                         width: 25px;
+                         outline: none;
+                         text-align: center;
+                         font-weight: bold;
+                         padding: 0;
+                         .fa-search {
+                             font-size: 12px;
+                             color: white;
+                         }
+                     }
+                     button:hover {
+                         cursor: pointer;
+                     }
+                     #help {
+                         display: none;
+                         font-style: italic;
+                         font-size: 0.8em;
+                     }
+                 }
                 select{
                     border-style: none;
                     background: transparent;
@@ -202,7 +193,6 @@ body {
                     .login {
                         background: #4e2d2d;
                         border-radius: 6px;
-                        padding-top: 8px;
                         font-size: 10px;
                         outline: none;
                         color: lightgray;
@@ -217,7 +207,6 @@ body {
                         color: #eeeeee;
                         border-radius: 6px;
                         background: rgb(240, 75, 75);
-                        padding-top: 8px;
                         font-size: 10px;
                         outline: none;
                         height: 26px;
