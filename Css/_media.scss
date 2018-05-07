@@ -32,25 +32,25 @@
         .list-inline-item.icon {
             padding-top: 10px;
         }
-        .border-none{
+        .border-none {
             border-style: none !important;
         }
     }
     #home {
-        .embed-responsive.embed-responsive-4by3{
+        .embed-responsive.embed-responsive-4by3 {
             display: block;
         }
-        .embed-responsive.embed-responsive-16by9{
+        .embed-responsive.embed-responsive-16by9 {
             display: none;
         }
-        .homeMob{
+        .homeMob {
             margin-top: 150px !important;
         }
         margin-top: 0 !important;
         height: 800px;
-        .books{
+        .books {
             height: 800px !important;
-            .col-8.padd{
+            .col-8.padd {
                 padding-left: 25px;
             }
         }
@@ -78,13 +78,12 @@
         .cr-hidden {
             display: none;
         }
-         .row.career{
+        .row.career {
             display: none;
-
         }
-        .courceList.vacancy{
+        .courceList.vacancy {
             height: 800px;
-            .form-control{
+            .form-control {
                 display: block;
                 padding: 5px !important;
             }
@@ -117,19 +116,16 @@
                             color: #6f5959;
                         }
                     }
-                   
                 }
-                .form-control{
+                .form-control {
                     display: block;
                     padding: 5px !important;
                 }
-                .col-8 .btn-brown{
+                .col-8 .btn-brown {
                     width: 98px !important;
-
                 }
-                .col-2.mob{
-                    padding-right: 0px !important;
-                    // padding-left: 0px !important;
+                .col-2.mob {
+                    padding-right: 0px !important; // padding-left: 0px !important;
                 }
             }
             .infoBox {
@@ -187,7 +183,7 @@
                     border-style: none;
                     list-style-type: none;
                     transition: all ease 0.3s;
-                    @media only screen and (max-width:749px){
+                    @media only screen and (max-width: 749px) {
                         display: inline-block;
                         margin-left: 50px;
                         width: 60px;
@@ -206,7 +202,7 @@
                             border-top: 12px solid transparent;
                             border-bottom: 12px solid transparent;
                             border-left: 12px solid rgb(219, 85, 36);
-                            @media only screen and (max-width:749px){
+                            @media only screen and (max-width: 749px) {
                                 border-left: 12px solid transparent;
                                 border-right: 12px solid transparent;
                                 border-top: 12px solid rgb(219, 85, 36);
@@ -237,7 +233,7 @@
                 }
             }
         }
-        ul.list-inline.mob{
+        ul.list-inline.mob {
             display: block;
         }
     }
@@ -283,7 +279,8 @@
         bottom: 30% !important;
     }
 }
-@media only screen and(max-width: 320px){
+
+@media only screen and(max-width: 320px) {
     #navMobile {
         display: block;
         .container {
@@ -312,8 +309,56 @@
         .list-inline-item.icon {
             padding-top: 10px;
         }
-        .border-none{
+        .border-none {
             border-style: none !important;
         }
     }
+}
+
+@media only screen and (min-width: 1367px) and (max-width:1920px) {
+    #home {
+        height: 800px;
+        ul.myList .myList-item {
+            padding: 13px 10px 0 10px;
+            height: 14.6% !important;
+            a {
+                padding: 0 15px;
+                .myList-icon {
+                    margin: 0 auto;
+                    width: 49px;
+                    height: 60px;
+                }
+                h6 {
+                    text-align: center;
+                }
+            }
+        }
+        ul.myList.fullWidth {
+            padding: 13px 10px 0 10px;
+            height: 18.6% !important;
+            a {
+                padding: 0 15px;
+                .myList-icon {
+                    margin: 0 auto;
+                    width: 49px;
+                    height: 60px;
+                }
+                h6 {
+                    text-align: center;
+                }
+            }
+        }
+        .courceList {
+            height: 745px !important;
+        }
+        .homeMob{
+            .about{
+                height: 700px !important;
+            }
+        }
+    }
+    #errorPage{
+        height: 900px;
+    }
+
 }

@@ -239,11 +239,11 @@ body {
             display: inline-block; // padding: 0 70px;
             .myList-item {
                 text-align: center;
-                height: 50px;
+                height: 65px;
                 position: relative;
                 border-bottom: 1px solid rgb(216, 208, 206);
                 list-style-type: none;
-                transition: all ease 0.3s;
+                transition: all ease 0.3s;              
                 &:hover {
                     background: rgb(219, 85, 36);
                     color: white;
@@ -258,6 +258,7 @@ body {
                         border-top: 12px solid transparent;
                         border-bottom: 12px solid transparent;
                         border-left: 12px solid rgb(219, 85, 36);
+
                     }
                 }
                 .myList-icon {
