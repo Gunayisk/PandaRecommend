@@ -242,9 +242,9 @@
     }
 }
 
-.books{
+.books {
     // background: $brown;
-    height: 600px;
+    height: 720px;
     overflow-y: scroll;
     .infoBox {
         width: 130px;
@@ -402,47 +402,46 @@
             }
         }
     }
-    .facebook{
+    .facebook {
         background: #4267b2;
     }
-    .twitter{
+    .twitter {
         background: #1da1f2;
     }
-    .google{
+    .google {
         background: #db4437;
     }
-    .linkedin{
-        background: linear-gradient(45deg, #0077b5,#008891);
+    .linkedin {
+        background: linear-gradient(45deg, #0077b5, #008891);
         background-attachment: fixed;
         background-color: #0077b5;
     }
-    .pinterest{
+    .pinterest {
         background-color: rgb(189, 8, 28);
     }
-    .col-md-12 .video{
+    .col-md-12 .video {
         width: 500px;
-       margin: 0 auto;
-       border-radius: 10px;
-       video{
-        max-width: 100%;
+        margin: 0 auto;
         border-radius: 10px;
-       }
-       video::-webkit-media-controls-panel {
-           margin: 0 auto;
-        width: 75%;
-        height: 32px;
-        background: gray;
-        border-radius: 5px;
-        color: gray;
-        position: absolute;
-        bottom: 0;
-        left: 12.5%;
-        @media only screen and (max-width:749px){
-            width: 100% !important;
-            left: 0 !important;
+        video {
+            max-width: 100%;
+            border-radius: 10px;
         }
-      }
-      
+        video::-webkit-media-controls-panel {
+            margin: 0 auto;
+            width: 75%;
+            height: 32px;
+            background: gray;
+            border-radius: 5px;
+            color: gray;
+            position: absolute;
+            bottom: 0;
+            left: 12.5%;
+            @media only screen and (max-width: 749px) {
+                width: 100% !important;
+                left: 0 !important;
+            }
+        }
     }
 }
 

@@ -47,7 +47,7 @@
             margin-top: 150px !important;
         }
         margin-top: 0 !important;
-        height: 800px;
+        height: 620px;
         .books {
             height: 800px !important;
             .col-8.padd {
@@ -97,6 +97,7 @@
                 padding-left: 0 !important;
             }
             form {
+                margin-top: 20px;
                 width: 100% !important;
                 margin-left: 0 !important;
                 .form-group {
@@ -154,6 +155,15 @@
                 }
                 h6.p {
                     display: none;
+                }
+            }
+            .mob-icon {
+                h6 {
+                    font-size: 13px;
+                    text-align: center;
+                }
+                .fa-star {
+                    font-size: 9px;
                 }
             }
             .checked {
@@ -351,14 +361,13 @@
         .courceList {
             height: 745px !important;
         }
-        .homeMob{
-            .about{
+        .homeMob {
+            .about {
                 height: 700px !important;
             }
         }
     }
-    #errorPage{
+    #errorPage {
         height: 900px;
     }
-
 }
