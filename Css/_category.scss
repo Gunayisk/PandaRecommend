@@ -13,9 +13,15 @@
                 .myList {
                     padding: 0;
                     display: inline-block; // padding: 0 70px;
+                    a {
+                        font-size: 12px;
+                        padding: 0 10px;
+                        text-decoration: none;
+                        color: $brown;
+                    }
                     .myList-item {
                         text-align: center;
-                        height: 50px;
+                        height: 60px;
                         position: relative;
                         border-style: none;
                         list-style-type: none;
@@ -57,13 +63,7 @@
                                 width: 100%;
                                 height: 80%;
                             }
-                        }
-                        a {
-                            font-size: 12px;
-                            padding: 0 10px;
-                            text-decoration: none;
-                            color: $brown;
-                        }
+                        }                    
                         a:active {
                             background: rgb(219, 85, 36);
                         }
